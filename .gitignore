@@ -6,3 +6,5 @@ terraform.exe
 *.tfstate
 *.tfstate.backup
 Program.txt
+**/.git
+**/.DS_Store
