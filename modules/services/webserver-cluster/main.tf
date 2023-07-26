@@ -1,18 +1,8 @@
-#terraform {
-#  required_providers {
-#    aws = {
-#        source = "hashicorp/aws"
-#        version = "~> 4.0"
-#        
-#    }
-#  }
-#  
+#Providers are not required in reusable modules
+
+#provider "aws" {
+#    region = "us-east-2"
 #}
-
-
-provider "aws" {
-    region = "us-east-2"
-}
 
 resource "aws_launch_configuration" "example" {
     image_id = "ami-0fb653ca2d3203ac1"
